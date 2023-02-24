@@ -5,6 +5,7 @@ module.exports = {
       'module-resolver',
       {
         alias: {
+          '@components': './src/components',
           '@features/authentication': './src/features/authentication',
           '@navigation': './src/navigation',
           '@styles': './src/styles',

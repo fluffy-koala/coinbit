@@ -12,6 +12,7 @@
     "jsx": "react-native",
     "noEmit": true,
     "paths": {
+      "@components": ["src/components"],
       "@features/authentication": ["src/features/authentication"],
       "@navigation": ["src/navigation"],
       "@navigation/types": ["src/navigation/types"],
