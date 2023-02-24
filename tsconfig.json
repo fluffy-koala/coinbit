@@ -6,7 +6,7 @@
     "baseUrl": ".",
     "target": "esnext",
     "module": "commonjs",
-    "types": ["react-native"],
+    "types": ["react-native", "styled-components-react-native"],
     "lib": ["es2019"],
     "allowJs": true,
     "jsx": "react-native",
@@ -14,7 +14,8 @@
     "paths": {
       "@features/authentication": ["src/features/authentication"],
       "@navigation": ["src/navigation"],
-      "@navigation/types": ["src/navigation/types"]
+      "@navigation/types": ["src/navigation/types"],
+      "@styles": ["src/styles"]
     },
     "isolatedModules": true,
     "strict": true,
