@@ -4,6 +4,8 @@ module.exports = {
   root: true,
   rules: {
     '@typescript-eslint/consistent-type-imports': 'error',
+    'arrow-body-style': ['error', 'always'],
+    'react/jsx-no-useless-fragment': 'error',
     'react/jsx-sort-props': 'error',
     'simple-import-sort/exports': 'error',
     'simple-import-sort/imports': 'error',
