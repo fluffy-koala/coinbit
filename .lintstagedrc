@@ -1,0 +1,8 @@
+{
+  "./**/*.+(js|ts|tsx)": [
+    "eslint --max-warnings=0"
+  ],
+  "./**/*.+js|ts|tsx": [
+    "prettier --write"
+  ]
+}

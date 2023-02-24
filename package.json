@@ -5,7 +5,8 @@
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
-    "start": "react-native start"
+    "start": "react-native start",
+    "prepare": "husky install"
   },
   "dependencies": {
     "react": "18.2.0",
@@ -23,6 +24,8 @@
     "eslint-plugin-sort-destructure-keys": "^1.5.0",
     "eslint-plugin-sort-keys-fix": "^1.1.2",
     "eslint-plugin-typescript-sort-keys": "^2.1.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.2",
     "metro-react-native-babel-preset": "0.73.7",
     "prettier": "^2.4.1",
     "typescript": "4.8.4"
