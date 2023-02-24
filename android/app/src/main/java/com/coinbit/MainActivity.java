@@ -5,8 +5,16 @@ import com.facebook.react.ReactActivityDelegate;
 import com.facebook.react.defaults.DefaultNewArchitectureEntryPoint;
 import com.facebook.react.defaults.DefaultReactActivityDelegate;
 
-public class MainActivity extends ReactActivity {
+import android.os.Bundle; // [Project Setup] Required for react-native-splash-screen package
+import org.devio.rn.splashscreen.SplashScreen; // [Project Setup] Required for react-native-splash-screen package
 
+public class MainActivity extends ReactActivity {
+  @Override
+  protected void onCreate(Bundle savedInstanceState) {
+    SplashScreen.show(this, true);  // [Project Setup] Required for react-native-splash-screen package
+    super.onCreate(savedInstanceState);
+  }
+  
   /**
    * Returns the name of the main component registered from JavaScript. This is used to schedule
    * rendering of the component.
