@@ -5,14 +5,14 @@ import com.facebook.react.ReactActivityDelegate;
 import com.facebook.react.defaults.DefaultNewArchitectureEntryPoint;
 import com.facebook.react.defaults.DefaultReactActivityDelegate;
 
-import android.os.Bundle; // [Project Setup] Required for react-native-splash-screen package
+import android.os.Bundle; // [Project Setup] Required for react-native-splash-screen and @react-navigation/native packages
 import org.devio.rn.splashscreen.SplashScreen; // [Project Setup] Required for react-native-splash-screen package
 
 public class MainActivity extends ReactActivity {
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     SplashScreen.show(this, true);  // [Project Setup] Required for react-native-splash-screen package
-    super.onCreate(savedInstanceState);
+    super.onCreate(savedInstanceState); // [Project Setup] Required for @react-navigation/native package
   }
   
   /**
