@@ -1,10 +1,18 @@
 module.exports = {
   extends: '@react-native-community',
-  plugins: ['sort-keys-fix', 'simple-import-sort', 'sort-destructure-keys'],
+  plugins: [
+    'eslint-plugin-import',
+    'sort-keys-fix',
+    'simple-import-sort',
+    'sort-destructure-keys',
+  ],
   root: true,
   rules: {
     '@typescript-eslint/consistent-type-imports': 'error',
     'arrow-body-style': ['error', 'always'],
+    'import/newline-after-import': 'error',
+    'object-shorthand': 'error',
+    'react/jsx-curly-brace-presence': ['error', 'never'],
     'react/jsx-no-useless-fragment': 'error',
     'react/jsx-sort-props': 'error',
     'simple-import-sort/exports': 'error',
