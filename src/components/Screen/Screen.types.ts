@@ -1,3 +1,5 @@
 import type { PropsWithChildren } from 'react';
 
-export type ScreenProps = PropsWithChildren;
+export type ScreenProps = PropsWithChildren & {
+  isScrollable?: boolean;
+};

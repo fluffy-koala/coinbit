@@ -28,7 +28,7 @@ const SignIn: FC<AuthenticationStackScreenProps<'SignIn'>> = ({
   };
 
   return (
-    <Screen>
+    <Screen isScrollable>
       <Greeting
         box={{ marginBottom: '52px' }}
         subtitle="Please sign in to your account"

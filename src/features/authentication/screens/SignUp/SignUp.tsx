@@ -29,7 +29,7 @@ const SignUp: FC<AuthenticationStackScreenProps<'SignUp'>> = ({
   const handleSignUpButtonPress = formMethods.handleSubmit(() => {});
 
   return (
-    <Screen>
+    <Screen isScrollable>
       <Greeting
         box={{ marginBottom: '52px' }}
         subtitle="Please create a new account"
