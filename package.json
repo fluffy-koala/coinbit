@@ -12,6 +12,7 @@
     "@hookform/resolvers": "^2.9.11",
     "@react-navigation/native": "^6.1.5",
     "@react-navigation/native-stack": "^6.9.11",
+    "@reduxjs/toolkit": "^1.9.3",
     "react": "18.2.0",
     "react-hook-form": "^7.43.2",
     "react-native": "0.71.3",
@@ -19,6 +20,7 @@
     "react-native-screens": "^3.20.0",
     "react-native-splash-screen": "^3.3.0",
     "react-native-svg": "^13.8.0",
+    "react-redux": "^8.0.5",
     "styled-components": "^5.3.6",
     "styled-system": "^5.1.5",
     "yup": "^1.0.0"
@@ -45,6 +47,8 @@
     "lint-staged": "^13.1.2",
     "metro-react-native-babel-preset": "0.73.7",
     "prettier": "^2.4.1",
+    "react-devtools": "^4.27.2",
+    "react-devtools-core": "^4.27.2",
     "react-native-svg-transformer": "^1.0.0",
     "typescript": "4.8.4"
   },

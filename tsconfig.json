@@ -12,10 +12,12 @@
     "jsx": "react-native",
     "noEmit": true,
     "paths": {
+      "@api": ["src/api"],
       "@components": ["src/components"],
       "@features/authentication": ["src/features/authentication"],
       "@hocs": ["src/hocs"],
       "@navigation": ["src/navigation"],
+      "@store": ["src/store"],
       "@styles": ["src/styles"]
     },
     "isolatedModules": true,
