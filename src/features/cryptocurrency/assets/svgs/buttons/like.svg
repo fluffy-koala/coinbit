@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 20 18" width="20" height="18" xmlns="http://www.w3.org/2000/svg" fill="none">
+  <path id="primary" style="stroke: rgb(0, 0, 0); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;" d="M 17.59 2.467 C 19.498 4.383 19.498 7.481 17.59 9.397 L 10.02 17.027 L 2.45 9.397 C -0.214 6.715 1.024 2.155 4.678 1.19 C 5.074 1.085 5.481 1.03 5.89 1.027 C 7.181 1.035 8.418 1.552 9.33 2.467 C 9.596 2.73 9.828 3.026 10.02 3.347 C 10.212 3.026 10.444 2.73 10.71 2.467 C 12.601 0.547 15.698 0.547 17.59 2.467 Z"/>
+</svg>
