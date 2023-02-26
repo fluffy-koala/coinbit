@@ -14,8 +14,8 @@
     "paths": {
       "@components": ["src/components"],
       "@features/authentication": ["src/features/authentication"],
+      "@hocs": ["src/hocs"],
       "@navigation": ["src/navigation"],
-      "@navigation/types": ["src/navigation/types"],
       "@styles": ["src/styles"]
     },
     "isolatedModules": true,

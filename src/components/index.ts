@@ -1,2 +1,3 @@
-export { Box } from './Box';
-export { Paragraph } from './Paragraph';
+export * from './Box';
+export * from './Paragraph';
+export * from './Screen';
