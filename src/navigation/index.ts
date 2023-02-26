@@ -1,1 +1,1 @@
-export { AppStack } from './AppStack';
+export * from './AppStack';

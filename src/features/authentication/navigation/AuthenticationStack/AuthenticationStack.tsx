@@ -1,4 +1,4 @@
-import { SignIn } from '@features/authentication';
+import { SignIn, SignUp } from '@features/authentication';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import React from 'react';
 
@@ -17,6 +17,7 @@ const AuthenticationStack = () => {
       }}
     >
       <Stack.Screen component={SignIn} name="SignIn" />
+      <Stack.Screen component={SignUp} name="SignUp" />
     </Stack.Navigator>
   );
 };

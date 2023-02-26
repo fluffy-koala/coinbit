@@ -1,10 +1,10 @@
+import type { AppStackParamsList } from '@navigation';
 import type { CompositeScreenProps } from '@react-navigation/native';
 import type { NativeStackScreenProps } from '@react-navigation/native-stack';
 
-import type { AppStackParamsList } from '../AppStack';
-
 export type AuthenticationStackParamsList = {
   SignIn: undefined;
+  SignUp: undefined;
 };
 
 export type AuthenticationStackScreenProps<
