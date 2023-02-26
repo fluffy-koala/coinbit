@@ -1,10 +1,10 @@
+import { Input } from '@components';
 import { withBox } from '@hocs';
 import type { FC } from 'react';
 import React from 'react';
 import { useFormState } from 'react-hook-form';
 
 import { Button } from '../Button';
-import { Input } from '../Input';
 import type { SignInFormData, SignInFormProps } from './SignInForm.types';
 
 const SignInForm: FC<SignInFormProps> = ({
