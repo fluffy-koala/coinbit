@@ -1,5 +1,8 @@
 module.exports = {
-  extends: '@react-native-community',
+  extends: [
+    '@react-native-community',
+    'plugin:typescript-sort-keys/recommended',
+  ],
   plugins: [
     'eslint-plugin-import',
     'sort-keys-fix',

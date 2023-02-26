@@ -4,7 +4,7 @@ export type SignUpFormProps = {
 };
 
 export type SignUpFormData = {
+  confirmedPassword: string;
   email: string;
   password: string;
-  confirmedPassword: string;
 };
