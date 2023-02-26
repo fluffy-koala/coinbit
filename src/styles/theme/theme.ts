@@ -1,7 +1,38 @@
 import type { DefaultTheme } from 'styled-components/native';
 
+const color: DefaultTheme['color'] = {
+  alto: '#D9D9D9',
+  casal: '#326164',
+  codGray: '#151515',
+  gray: '#8A8A8A',
+  outerSpace: '#303E3C',
+  pampas: '#EFECE6',
+  sisal: '#D9D2C5',
+  sunsetOrange: '#FF4747',
+  white: '#FFFFFF',
+};
+
 const theme: DefaultTheme = {
+  color,
   variant: {
+    button: {
+      primary: {
+        alignItems: 'center',
+        backgroundColor: color.casal,
+        borderRadius: '2px',
+        justifyContent: 'center',
+        paddingX: '20px',
+        paddingY: '12px',
+      },
+      secondary: {
+        alignItems: 'center',
+        backgroundColor: color.sisal,
+        borderRadius: '2px',
+        justifyContent: 'center',
+        paddingX: '20px',
+        paddingY: '12px',
+      },
+    },
     typography: {
       'body-1': {
         fontFamily: 'ProximaNova-Regular',
