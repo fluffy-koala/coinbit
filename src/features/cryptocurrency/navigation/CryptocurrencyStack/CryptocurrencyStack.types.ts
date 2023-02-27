@@ -4,6 +4,7 @@ import type { NativeStackScreenProps } from '@react-navigation/native-stack';
 
 export type CryptocurrencyStackParamsList = {
   CoinSearch: undefined;
+  Watchlist: undefined;
 };
 
 export type CryptocurrencyStackScreenProps<
