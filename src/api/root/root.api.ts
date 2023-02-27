@@ -1,10 +1,10 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
-import { API } from './api.constants';
+import { ROOT_API } from './root.api.constants';
 
-const api = createApi({
+const rootApi = createApi({
   baseQuery: fetchBaseQuery({
-    baseUrl: API.BASE_URL,
+    baseUrl: ROOT_API.BASE_URL,
   }),
   endpoints: () => {
     return {};
@@ -12,4 +12,4 @@ const api = createApi({
   reducerPath: 'api',
 });
 
-export default api;
+export default rootApi;

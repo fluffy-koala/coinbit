@@ -1,8 +1,8 @@
-import { api } from '@api';
+import { rootApi } from '@api';
 
 import coinResponseTransformer from './coin.responseTransformer';
 
-const coinApi = api.injectEndpoints({
+const coinApi = rootApi.injectEndpoints({
   endpoints: (build) => {
     return {
       getCoins: build.query({
