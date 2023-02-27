@@ -15,6 +15,7 @@ const Screen: FC<ScreenProps> = ({ children, isScrollable }) => {
       ? {
           bounces: false,
           contentContainerStyle: style.scrollViewContentContainer,
+          keyboardShouldPersistTaps: 'handled',
           overScrollMode: 'never',
           showsVerticalScrollIndicator: false,
           style: style.scrollViewContainer,
