@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-import { signIn } from './authentication.reducers';
+import { signIn, signOut } from './authentication.reducers';
 import type { AuthenticationSliceState } from './authentication.types';
 
 const initialState: AuthenticationSliceState = {
@@ -12,6 +12,7 @@ const authenticationSlice = createSlice({
   name: 'authenticationSlice',
   reducers: {
     signIn,
+    signOut,
   },
 });
 
