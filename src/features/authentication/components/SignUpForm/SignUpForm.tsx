@@ -1,5 +1,4 @@
 import { Input } from '@components';
-import { withBox } from '@hocs';
 import type { FC } from 'react';
 import React from 'react';
 import { useFormState } from 'react-hook-form';
@@ -49,4 +48,4 @@ const SignUpForm: FC<SignUpFormProps> = ({
   );
 };
 
-export default withBox(SignUpForm);
+export default SignUpForm;

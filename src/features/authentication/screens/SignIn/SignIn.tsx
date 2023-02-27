@@ -1,5 +1,6 @@
 import { Screen } from '@components';
 import { yupResolver } from '@hookform/resolvers/yup';
+import { useAppDispatch } from '@store';
 import type { FC } from 'react';
 import React from 'react';
 import { FormProvider, useForm } from 'react-hook-form';
@@ -7,6 +8,7 @@ import { FormProvider, useForm } from 'react-hook-form';
 import type { SignInFormData } from '../../components';
 import { Greeting, SignInForm } from '../../components';
 import type { AuthenticationStackScreenProps } from '../../navigation';
+import { authenticationSlice } from '../../store';
 import { schema } from '../../utils';
 
 const SignIn: FC<AuthenticationStackScreenProps<'SignIn'>> = ({
@@ -21,7 +23,11 @@ const SignIn: FC<AuthenticationStackScreenProps<'SignIn'>> = ({
     resolver: yupResolver(schema.signInForm),
   });
 
-  const handleSignInButtonPress = formMethods.handleSubmit(() => {});
+  const dispatch = useAppDispatch();
+
+  const handleSignInButtonPress = formMethods.handleSubmit(() => {
+    dispatch(authenticationSlice.actions.signIn());
+  });
 
   const handleSignUpButtonPress = () => {
     navigation.replace('SignUp');

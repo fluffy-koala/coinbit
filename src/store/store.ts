@@ -1,4 +1,5 @@
 import { rootApi } from '@api';
+import { authenticationSlice } from '@features/authentication';
 import { configureStore } from '@reduxjs/toolkit';
 import type { TypedUseSelectorHook } from 'react-redux';
 import { useDispatch, useSelector } from 'react-redux';
@@ -12,6 +13,7 @@ export const store = configureStore({
     );
   },
   reducer: {
+    [authenticationSlice.name]: authenticationSlice.reducer,
     [rootApi.reducerPath]: rootApi.reducer,
   },
 });

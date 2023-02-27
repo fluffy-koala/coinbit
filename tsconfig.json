@@ -19,7 +19,8 @@
       "@hocs": ["src/hocs"],
       "@navigation": ["src/navigation"],
       "@store": ["src/store"],
-      "@styles": ["src/styles"]
+      "@styles": ["src/styles"],
+      "@types": ["src/types"]
     },
     "isolatedModules": true,
     "strict": true,

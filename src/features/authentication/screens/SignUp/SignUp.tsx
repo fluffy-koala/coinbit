@@ -1,5 +1,6 @@
 import { Screen } from '@components';
 import { yupResolver } from '@hookform/resolvers/yup';
+import { useAppDispatch } from '@store';
 import type { FC } from 'react';
 import React from 'react';
 import { FormProvider, useForm } from 'react-hook-form';
@@ -7,6 +8,7 @@ import { FormProvider, useForm } from 'react-hook-form';
 import type { SignUpFormData } from '../../components';
 import { Greeting, SignUpForm } from '../../components';
 import type { AuthenticationStackScreenProps } from '../../navigation';
+import { authenticationSlice } from '../../store';
 import { schema } from '../../utils';
 
 const SignUp: FC<AuthenticationStackScreenProps<'SignUp'>> = ({
@@ -22,11 +24,15 @@ const SignUp: FC<AuthenticationStackScreenProps<'SignUp'>> = ({
     resolver: yupResolver(schema.signUpForm),
   });
 
+  const dispatch = useAppDispatch();
+
   const handleSignInButtonPress = () => {
     navigation.replace('SignIn');
   };
 
-  const handleSignUpButtonPress = formMethods.handleSubmit(() => {});
+  const handleSignUpButtonPress = formMethods.handleSubmit(() => {
+    dispatch(authenticationSlice.actions.signIn());
+  });
 
   return (
     <Screen isScrollable>

@@ -1,5 +1,6 @@
 module.exports = {
   plugins: [
+    '@babel/plugin-proposal-export-namespace-from',
     'babel-plugin-styled-components',
     [
       'module-resolver',
@@ -13,6 +14,7 @@ module.exports = {
           '@navigation': './src/navigation',
           '@store': './src/store',
           '@styles': './src/styles',
+          '@types': './src/types',
         },
         extentions: ['.ts', '.tsx'],
         root: ['./'],
