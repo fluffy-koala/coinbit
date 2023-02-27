@@ -1,5 +1,4 @@
 import { Paragraph } from '@components';
-import { withBox } from '@hocs';
 import { theme } from '@styles';
 import type { FC } from 'react';
 import React from 'react';
@@ -42,4 +41,4 @@ const CoinList: FC<CoinListProps> = ({ coins }) => {
   );
 };
 
-export default withBox(CoinList);
+export default CoinList;

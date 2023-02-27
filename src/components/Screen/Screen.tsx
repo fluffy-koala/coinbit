@@ -23,7 +23,6 @@ const Screen: FC<ScreenProps> = ({ children, isScrollable }) => {
       : {
           backgroundColor: theme.color.white,
           flex: 1,
-          paddingBottom: '16px',
           paddingTop: '52px',
           paddingX: '24px',
         },
