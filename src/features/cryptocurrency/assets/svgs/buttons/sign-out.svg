@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 -0.087 37.289 35.186" width="37.289" height="35.186" xmlns="http://www.w3.org/2000/svg">
+  <polyline id="primary" points="7.073 23.485 1.528 17.486 7.073 11.485" style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke: #151515; stroke-width: 2.5px;"/>
+  <line id="primary-2" data-name="primary" x1="1.528" y1="17.486" x2="27.402" y2="17.486" style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke: #151515; stroke-width: 2.5px;"/>
+  <path id="primary-3" data-name="primary" d="M 13.72 9.494 L 13.72 3.493 C 13.72 2.388 14.616 1.493 15.72 1.493 L 33.72 1.493 C 34.825 1.493 35.72 2.388 35.72 3.493 L 35.72 31.493 C 35.72 32.598 34.825 33.493 33.72 33.493 L 15.72 33.493 C 14.616 33.493 13.72 32.598 13.72 31.493 L 13.72 25.493" style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke: #151515; stroke-width: 2.5px;"/>
+</svg>
