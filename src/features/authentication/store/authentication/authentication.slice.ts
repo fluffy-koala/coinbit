@@ -4,7 +4,7 @@ import { signIn, signOut } from './authentication.reducers';
 import type { AuthenticationSliceState } from './authentication.types';
 
 const initialState: AuthenticationSliceState = {
-  isSignedIn: null,
+  isSignedIn: false,
 };
 
 const authenticationSlice = createSlice({

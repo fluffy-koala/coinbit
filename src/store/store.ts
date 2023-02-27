@@ -1,5 +1,6 @@
 import { rootApi } from '@api';
 import { authenticationSlice } from '@features/authentication';
+import { coinSlice } from '@features/cryptocurrency';
 import { configureStore } from '@reduxjs/toolkit';
 import type { TypedUseSelectorHook } from 'react-redux';
 import { useDispatch, useSelector } from 'react-redux';
@@ -14,6 +15,7 @@ export const store = configureStore({
   },
   reducer: {
     [authenticationSlice.name]: authenticationSlice.reducer,
+    [coinSlice.name]: coinSlice.reducer,
     [rootApi.reducerPath]: rootApi.reducer,
   },
 });

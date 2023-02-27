@@ -7,6 +7,7 @@ const color: DefaultTheme['color'] = {
   gray: '#8A8A8A',
   outerSpace: '#303E3C',
   pampas: '#EFECE6',
+  roman: '#DA5560',
   sisal: '#D9D2C5',
   sunsetOrange: '#FF4747',
   white: '#FFFFFF',

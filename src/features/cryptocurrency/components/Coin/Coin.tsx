@@ -1,4 +1,5 @@
 import { Box, Paragraph } from '@components';
+import { useAppDispatch, useAppSelector } from '@store';
 import { theme } from '@styles';
 import type { FC } from 'react';
 import React from 'react';
@@ -6,11 +7,22 @@ import { Pressable } from 'react-native';
 
 import LikeButtonIcon from '../../assets/svgs/buttons/like.svg';
 import CoinPlaceholderIcon from '../../assets/svgs/placeholders/coin.svg';
+import { coinSelectors, coinSlice } from '../../store';
 import type { CoinProps } from './Coin.types';
 
 const Coin: FC<CoinProps> = ({ id, name, symbol }) => {
+  const isCoinLiked = useAppSelector((state) => {
+    return coinSelectors.selectIsCoinLiked(state, id);
+  });
+
+  const dispatch = useAppDispatch();
+
   const handleLikeButtonIconPress = () => {
-    console.log(id);
+    dispatch(
+      isCoinLiked
+        ? coinSlice.actions.dislikeCoin(id)
+        : coinSlice.actions.likeCoin(id),
+    );
   };
 
   return (
@@ -34,8 +46,13 @@ const Coin: FC<CoinProps> = ({ id, name, symbol }) => {
           {name}
         </Paragraph>
       </Box>
-      <Pressable onPress={handleLikeButtonIconPress}>
-        <LikeButtonIcon />
+      <Pressable
+        hitSlop={{ bottom: 8, left: 8, right: 8, top: 8 }}
+        onPress={handleLikeButtonIconPress}
+      >
+        <LikeButtonIcon
+          fill={isCoinLiked ? theme.color.roman : theme.color.white}
+        />
       </Pressable>
     </Box>
   );
