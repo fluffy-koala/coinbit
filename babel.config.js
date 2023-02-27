@@ -8,6 +8,7 @@ module.exports = {
           '@api': './src/api',
           '@components': './src/components',
           '@features/authentication': './src/features/authentication',
+          '@features/cryptocurrency': './src/features/cryptocurrency',
           '@hocs': './src/hocs',
           '@navigation': './src/navigation',
           '@store': './src/store',
